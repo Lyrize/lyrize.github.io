@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript - Coderize</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Learn JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn-html.html">Learn HTML</a></li>
+                <li><a href="learn-js.html">Learn JavaScript</a></li>
+                <li><a href="learn-css.html">Learn CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Pengenalan JavaScript</h2>
+        <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif. JavaScript dapat digunakan untuk memperbarui dan mengubah baik HTML maupun CSS.</p>
+    </section>
+
+    <section>
+        <h2>Variabel dan Tipe Data</h2>
+        <p>Variabel dalam JavaScript dapat dideklarasikan menggunakan <code>var</code>, <code>let</code>, atau <code>const</code>. Berikut adalah beberapa tipe data dasar dalam JavaScript:</p>
+        <ul>
+            <li><code>String</code> - Contoh: <code>"Hello, World!"</code></li>
+            <li><code>Number</code> - Contoh: <code>42</code></li>
+            <li><code>Boolean</code> - Contoh: <code>true</code> atau <code>false</code></li>
+            <li><code>Array</code> - Contoh: <code>[1, 2, 3]</code></li>
+            <li><code>Object</code> - Contoh: <code>{ name: "John", age: 30 }</code></li>
+        </ul>
+        <p>Contoh deklarasi variabel:</p>
+        <pre><code>
+let name = "John";
+const age = 30;
+var isStudent = false;
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Fungsi</h2>
+        <p>Fungsi adalah blok kode yang dirancang untuk melakukan tugas tertentu. Fungsi didefinisikan dengan kata kunci <code>function</code> diikuti oleh nama fungsi, tanda kurung, dan kurung kurawal:</p>
+        <p>Contoh:</p>
+        <pre><code>
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet("Alice")); // Output: Hello, Alice!
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Kondisi</h2>
+        <p>Kondisi digunakan untuk melakukan tindakan yang berbeda berdasarkan kondisi yang berbeda. Pernyataan <code>if</code> digunakan untuk mengevaluasi kondisi:</p>
+        <p>Contoh:</p>
+        <pre><code>
+let score = 85;
+
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else {
+    console.log("Grade: C");
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Loop</h2>
+        <p>Loop digunakan untuk menjalankan blok kode berulang kali. Berikut adalah beberapa jenis loop yang umum dalam JavaScript:</p>
+        <h3>For Loop</h3>
+        <p>Contoh:</p>
+        <pre><code>
+for (let i = 0; i < 5; i++) {
+    console.log("Number: " + i);
+}
+        </code></pre>
+        <h3>While Loop</h3>
+        <p>Contoh:</p>
+        <pre><code>
+let i = 0;
+
+while (i < 5) {
+    console.log("Number: " + i);
+    i++;
+}
+        </code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coderize. Semua hak cipta dilindungi undang-undang.</p>
+    </footer>
+
+    <script>
+        // Contoh interaksi JavaScript
+        document.addEventListener("DOMContentLoaded", function() {
+            alert("Selamat datang di halaman Belajar JavaScript!");
+        });
+    </script>
+</body>
+</html>

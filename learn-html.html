@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML - Coderize</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Learn HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn-html.html">Learn HTML</a></li>
+                <li><a href="learn-js.html">Learn JavaScript</a></li>
+                <li><a href="learn-css.html">Learn CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Pengenalan HTML</h2>
+        <p>HTML adalah singkatan dari HyperText Markup Language. Ini adalah bahasa markup standar untuk membuat halaman web. Elemen HTML adalah blok penyusun dari halaman HTML.</p>
+    </section>
+
+    <section>
+        <h2>Dasar-dasar HTML</h2>
+        <h3>Format Teks</h3>
+        <p>HTML menyediakan beberapa elemen untuk memformat teks. Berikut adalah beberapa yang paling umum:</p>
+        <ul>
+            <li><code>&lt;b&gt;</code> - Teks tebal</li>
+            <li><code>&lt;i&gt;</code> - Teks miring</li>
+            <li><code>&lt;u&gt;</code> - Teks bergaris bawah</li>
+            <li><code>&lt;mark&gt;</code> - Teks yang disorot</li>
+        </ul>
+        <p>Contoh:</p>
+        <p><strong>Teks tebal</strong>, <em>teks miring</em>, <u>teks bergaris bawah</u>, dan <mark>teks yang disorot</mark>.</p>
+    </section>
+
+    <section>
+        <h2>Tautan HTML</h2>
+        <p>Tautan dibuat menggunakan elemen <code>&lt;a&gt;</code>. Atribut <code>href</code> menentukan URL halaman yang dituju oleh tautan:</p>
+        <p>Contoh:</p>
+        <p><a href="https://www.example.com">Ini adalah tautan ke example.com</a></p>
+    </section>
+
+    <section>
+        <h2>Gambar HTML</h2>
+        <p>Gambar disematkan menggunakan elemen <code>&lt;img&gt;</code>. Atribut <code>src</code> menentukan jalur ke gambar, dan atribut <code>alt</code> memberikan teks alternatif:</p>
+        <p>Contoh:</p>
+        <p><img src="images/example.jpg" alt="Contoh Gambar" width="792px" height="300px"></p>
+    </section>
+
+    <section>
+        <h2>Tabel HTML</h2>
+        <p>Tabel didefinisikan menggunakan elemen <code>&lt;table&gt;</code>. Tabel dibagi menjadi baris (<code>&lt;tr&gt;</code>), dan setiap baris dibagi menjadi sel (<code>&lt;td&gt;</code> atau <code>&lt;th&gt;</code> untuk sel header):</p>
+        <p>Contoh:</p>
+        <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Daftar HTML</h2>
+        <h3>Daftar Berurutan</h3>
+        <p>Daftar berurutan dibuat menggunakan elemen <code>&lt;ol&gt;</code>:</p>
+        <p>Contoh:</p>
+        <ol>
+            <li>Item pertama</li>
+            <li>Item kedua</li>
+            <li>Item ketiga</li>
+        </ol>
+
+        <h3>Daftar Tak Berurutan</h3>
+        <p>Daftar tak berurutan dibuat menggunakan elemen <code>&lt;ul&gt;</code>:</p>
+        <p>Contoh:</p>
+        <ul>
+            <li>Item pertama</li>
+            <li>Item kedua</li>
+            <li>Item ketiga</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formulir HTML</h2>
+        <p>Formulir digunakan untuk mengumpulkan input pengguna. Mereka dibuat menggunakan elemen <code>&lt;form&gt;</code>. Bidang input didefinisikan menggunakan elemen <code>&lt;input&gt;</code>:</p>
+        <p>Contoh:</p>
+        <form action="#">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <section>
+        <h2>Menyematkan Media</h2>
+        <h3>Video</h3>
+        <p>Video dapat disematkan menggunakan elemen <code>&lt;video&gt;</code>:</p>
+        <p>Contoh:</p>
+        <video width="640" height="480" controls>
+            <source src="video/example.mp4" type="video/mp4">
+            Peramban Anda tidak mendukung tag video.
+        </video>
+
+        <h3>Audio</h3>
+        <p>Audio dapat disematkan menggunakan elemen <code>&lt;audio&gt;</code>:</p>
+        <p>Contoh:</p>
+        <audio controls>
+            <source src="audio/example.mp3" type="audio/mpeg">
+            Peramban Anda tidak mendukung elemen audio.
+        </audio>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coderize. All rights reserved.</p>
+    </footer>
+</body>
+</html>

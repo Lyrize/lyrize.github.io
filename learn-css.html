@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS - Coderize</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Learn CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn-html.html">Learn HTML</a></li>
+                <li><a href="learn-js.html">Learn JavaScript</a></li>
+                <li><a href="learn-css.html">Learn CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Pengenalan CSS</h2>
+        <p>CSS adalah singkatan dari Cascading Style Sheets. CSS digunakan untuk mengontrol tata letak dan tampilan halaman web.</p>
+    </section>
+
+    <section>
+        <h2>Selektor CSS</h2>
+        <p>Selektor digunakan untuk "memilih" elemen HTML yang ingin Anda gaya. Berikut adalah beberapa selektor dasar:</p>
+        <ul>
+            <li><code>p</code> - Memilih semua elemen paragraf</li>
+            <li><code>.classname</code> - Memilih semua elemen dengan kelas tertentu</li>
+            <li><code>#idname</code> - Memilih elemen dengan ID tertentu</li>
+        </ul>
+        <p>Contoh:</p>
+        <pre><code>
+/* Memilih semua paragraf dan mengatur warnanya menjadi biru */
+p {
+    color: blue;
+}
+
+/* Memilih elemen dengan kelas 'highlight' dan mengatur background-nya */
+.highlight {
+    background-color: yellow;
+}
+
+/* Memilih elemen dengan ID 'header' dan mengatur ukurannya */
+#header {
+    font-size: 24px;
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Properti CSS</h2>
+        <p>Properti CSS digunakan untuk mengatur gaya elemen. Berikut adalah beberapa properti umum:</p>
+        <ul>
+            <li><code>color</code> - Mengatur warna teks</li>
+            <li><code>background-color</code> - Mengatur warna latar belakang</li>
+            <li><code>font-size</code> - Mengatur ukuran font</li>
+            <li><code>margin</code> - Mengatur margin luar elemen</li>
+            <li><code>padding</code> - Mengatur padding dalam elemen</li>
+        </ul>
+        <p>Contoh:</p>
+        <pre><code>
+p {
+    color: green;
+    background-color: lightgray;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Tata Letak CSS</h2>
+        <h3>Display</h3>
+        <p>Properti <code>display</code> menentukan bagaimana elemen ditampilkan. Nilai umum termasuk <code>block</code>, <code>inline</code>, dan <code>inline-block</code>.</p>
+        <p>Contoh:</p>
+        <pre><code>
+.block-element {
+    display: block;
+}
+
+.inline-element {
+    display: inline;
+}
+
+.inline-block-element {
+    display: inline-block;
+}
+        </code></pre>
+
+        <h3>Flexbox</h3>
+        <p>Flexbox adalah model tata letak yang kuat untuk mendesain tata letak responsif. Flexbox menggunakan properti seperti <code>display: flex</code>, <code>justify-content</code>, dan <code>align-items</code>.</p>
+        <p>Contoh:</p>
+        <pre><code>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin: 10px;
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Desain Responsif</h2>
+        <p>Desain responsif memastikan bahwa halaman web terlihat baik pada semua perangkat. Media queries digunakan untuk menerapkan gaya yang berbeda pada ukuran layar yang berbeda.</p>
+        <p>Contoh:</p>
+        <pre><code>
+/* Gaya untuk perangkat dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Gaya untuk perangkat dengan lebar minimum 601px */
+@media (min-width: 601px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+        </code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coderize. Semua hak cipta dilindungi undang-undang.</p>
+    </footer>
+</body>
+</html>
